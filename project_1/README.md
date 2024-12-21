@@ -8,11 +8,11 @@ Having executed the procedure for all digits of the sequence and storing the res
 
 We selected the seventh digit of our sequence and by applying windowing to the sequence, we observed the following results for each window:
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_1.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_1.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_2.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_2.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** The windowing in both cases (Rectangular and Hamming windows) is effective, yielding results close to the Discrete Fourier Transform (DFT) of 2. However:
@@ -43,7 +43,7 @@ A subroutine `make_tone()` was used to generate the sequence 03118822, avoiding 
 Below are the results for analyzing `easySig` and `hardSig` using `ttdecode()`, confirming the effectiveness of the method for signal decoding.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_3.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_3.jpg" alt="YCbCr Color Space Diagram" style="width: 100px; height: 100px;"/>
 </div>
 
 ---
@@ -75,7 +75,7 @@ By applying a Short-Time Fourier Transform (STFT) using a 0.04-second window and
 We repeated the analysis using windows of 0.08 and 0.16 seconds.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_6.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_6.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** Increasing the window size improves frequency-domain resolution but significantly reduces time-domain resolution. For a 0.16-second window, we achieve good frequency-domain approximation but poor temporal resolution.
@@ -84,7 +84,7 @@ We repeated the analysis using windows of 0.08 and 0.16 seconds.
 We performed a discretized Continuous Wavelet Transform (CWT) on the signal
 .
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_7.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_7.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** The CWT provides a more balanced resolution in both time and frequency domains, as it is non-uniform and adapts to the signal characteristics.
@@ -116,7 +116,7 @@ We calculated the STFT and visualized it using `contour()`.
 Repeating the analysis with 0.08 and 0.16-second windows:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_10.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_10.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** Larger window sizes reduce the visibility of abrupt changes, demonstrating a trade-off between temporal resolution and frequency resolution.
@@ -125,7 +125,7 @@ Repeating the analysis with 0.08 and 0.16-second windows:
 The discretized CWT revealed the following:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_11.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_11.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** Strong vertical curves in the frequency domain highlight abrupt changes, while weaker curves in the scale domain also align with these points.
@@ -142,7 +142,7 @@ We analyzed the signal `speech_utterance.wav` using short-time energy and zero-c
 For a 0.02-second Hamming window, we generated the following:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_12.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_12.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** Increasing the window size smooths the graphs and reduces noise. Short-time energy peaks correspond to voiced sounds, while ZCR peaks correspond to unvoiced sounds. The graphs are inversely related, aiding in voiced/unvoiced distinction.
@@ -155,7 +155,7 @@ For a 0.02-second Hamming window, we generated the following:
 Repeating with a 0.03-second window:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_13.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_13.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** The inverse relationship remains, confirming the robustness of the method.
@@ -165,11 +165,11 @@ Repeating with a 0.03-second window:
 Repeating the process for `music.wav`, we observed:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_14.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_14.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_15.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_15.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** Low-intensity instruments and synthetic notes exhibit minimal short-time energy but higher ZCR values. When vocals and stronger instruments enter, short-time energy increases sharply.
@@ -208,13 +208,13 @@ We create a function to extract the envelope of the input signal:
 The extracted envelope results for signals **D2** and **D4** are as follows:
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_17.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_17.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 - **Observation:** Increasing the value of `α` to 0.005 reduces the envelope's smoothing, as the absolute signal contributes more prominently.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_18.jpg" alt="YCbCr Color Space Diagram" style="width: 400px; height: 200px;"/>
+    <img src="./assets/Screenshot_18.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 200px;"/>
 </div>
 
 #### **About α's Impact**
