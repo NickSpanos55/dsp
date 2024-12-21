@@ -43,7 +43,7 @@ A subroutine `make_tone()` was used to generate the sequence 03118822, avoiding 
 Below are the results for analyzing `easySig` and `hardSig` using `ttdecode()`, confirming the effectiveness of the method for signal decoding.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
-    <img src="./assets/Screenshot_3.jpg" alt="YCbCr Color Space Diagram" style="width: 100px; height: 100px;"/>
+    <img src="./assets/Screenshot_3.jpg" alt="YCbCr Color Space Diagram" style="width: 200px; height: 100px;"/>
 </div>
 
 ---
